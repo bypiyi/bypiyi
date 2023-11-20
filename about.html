@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon_2.ico">
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <a href="index.html"><img src="./images/new_logo.png" alt="NyLogga" class="header_image" id="logo"></a>
+
+        <div>
+            <ul class="topnav">
+                <li><a href="earrings.html">EARRINGS</a></li>
+                <li><a href="necklace.html">NECKLACES</a></li>
+                <li class="right"><a class="active" href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+
+
+
+    <main>
+
+
+
+        <!-- HÖGERSTÄLLD -->
+        <div class="container_earrings">
+            <div class="box_earrings">
+
+
+
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/bypiyi_3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/bypiyi_2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/bypiyi_8.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/bypiyi_5.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/bypiyi_4.jpg" style="width:100%">
+                    </div>
+
+
+
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+
+            </div>
+
+
+            <div class="box_earrings">
+
+                <p class="p_headline_left">ABOUT</p>
+                <p class="earrings_text">
+                    BY PIYI creates with the aim of being colorful and playful. With inspiration from
+                    nature and all its colors and shapes, unique, handmade statement earrings and interior details are
+                    created in acrylic and stainless steel. </p>
+
+                <p class="earrings_text">
+                    All products are designed and created by hand by me, Alicia Piyi Tsirigotis. I hope that my jewelry
+                    and
+                    accessories can inspire a more colorful life. </p>
+
+                <p class="p_headline_left">HOW TO BUY</p>
+
+                <p class="earrings_text"> Our you intrested in buying any of our products? You do that easiest by
+                    sending us an e-mail or a direct message on instagram: </p>
+
+
+            </div>
+
+        </div>
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+
+
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="footer_container">
+            <div class="footer_text">
+
+                GLIMÅKRA FOLKHÖGSKOLA <br>
+                CASE 1: HTML & GIT <br>
+                CASE 2: CSS <br><br>
+
+                &copy; ALICIA PIYI TSIRIGOTIS <br>
+            </div>
+
+            <div>
+                <a href="index.html"><img src="./images/new_logo.png" alt="NyLogga" class="footer_image"></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

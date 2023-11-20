@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NECKLACES</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon_2.ico">
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <a href="index.html"><img src="./images/new_logo.png" alt="NyLogga" class="header_image" id="logo"></a>
+
+        <div>
+            <ul class="topnav">
+                <li><a href="earrings.html">EARRINGS</a></li>
+                <li><a class="active" href="necklace.html">NECKLACES</a></li>
+                <li class="right"><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+
+
+
+    <main>
+
+
+
+        <p class="p_headline">NECKLACES</p>
+        <h3>SHOWCASE OF OUR CURRENT EARRINGS. TO ORDER, PLEASE CONTACT US ON MAIL OR ON INSTAGRAM</h3>
+
+        <div class="container_necklace">
+
+
+
+            <div class="card">
+                <img src="/images/necklace_1.jpg" alt="Card Back" class="img">
+                <img src="/images/shellcombo_small_2.jpg" class="img-top img" alt="Card Front">
+                <p class="p_article">.</p>
+            </div>
+
+            <div class="card">
+                <img src="/images/necklace_2.jpg" alt="Card Back" class="img">
+                <img src="/images/bypiyi_2.jpg" class="img-top img" alt="Card Front">
+                <p class="p_article">- SEASTAR NECKLACE -</p>
+            </div>
+
+            <div class="card">
+                <img src="/images/necklace_3.jpg" alt="Card Back" class="img">
+                <img src="/images/bypiyi_2.jpg" class="img-top img" alt="Card Front">
+                <p class="p_article">.L</p>
+            </div>
+
+
+
+        </div>
+
+
+
+        <h1>"FUNKY STATEMENT EARRINGS"</h1>
+
+
+
+
+
+
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+
+
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="footer_container">
+            <div class="footer_text">
+
+                GLIMÅKRA FOLKHÖGSKOLA <br>
+                CASE 1: HTML & GIT <br>
+                CASE 2: CSS <br><br>
+
+                &copy; ALICIA PIYI TSIRIGOTIS <br>
+            </div>
+
+            <div>
+                <a href="index.html"><img src="./images/new_logo.png" alt="NyLogga" class="footer_image"></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
